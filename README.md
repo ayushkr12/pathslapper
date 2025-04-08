@@ -23,11 +23,6 @@ https://example.com/admin
 https://test.io/admin
 ```
 
-Handles mixed URL formats:
-
-- trims trailing slashes
-- ensures path starts with `/`
-
 ## Workflow:
 
 Example workflow for appending paths and probing:
