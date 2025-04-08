@@ -9,7 +9,7 @@ import (
 )
 
 func showHelp() {
-	fmt.Println("\nUsage: cat <urls_filePath> | pathslapper <path-to-append>")
+	fmt.Println("\nUsage: cat <urls_file_path> | pathslapper <path-to-append>")
 	fmt.Println("Example: ")
 	fmt.Println("      cat urls.txt | pathslapper /api/v1/admin\n")
 }
