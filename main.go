@@ -17,6 +17,7 @@ func showHelp() {
 func removeURLQueryParams(url string) string {
 	parsedURL, _ := urlparser.Parse(url) // ignore error
 	parsedURL.RawQuery = ""
+	parsedURL.Fragment = ""
 	return parsedURL.String()
 }
 
