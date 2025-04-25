@@ -13,7 +13,7 @@ go install github.com/ayushkr12/pathslapper@latest
 
 Basic usage:
 
-```sh
+```console
 $ cat urls.txt
 https://example.com
 https://test.io/
@@ -30,13 +30,3 @@ $ cat paths.txt | pathslapper "https://example.org"
 https://example.org/api/v1/admin
 https://example.org/test/db
 ```
-
-## Workflow:
-
-Example workflow for appending paths and probing:
-
-```sh
-cat hosts.txt | pathslapper "/website-backup.zip" | httpx -silent
-```
-
-- see https://github.com/projectdiscovery/httpx for more info about httpx
