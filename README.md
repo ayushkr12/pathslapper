@@ -11,8 +11,6 @@ go install github.com/ayushkr12/pathslapper@latest
 
 ## Usage:
 
-Basic usage:
-
 ```console
 $ cat urls.txt
 https://example.com
