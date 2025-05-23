@@ -44,7 +44,8 @@ func handleURLFile(scanner *bufio.Scanner, path string) {
 	for scanner.Scan() {
 		parsedURL := RemoveURLQueryParams(scanner.Text()) // Using RemoveURLQueryParams function
 		newURL := AppendPath(parsedURL, path)             // Using AppendPath function
-		fmt.Println(newURL)
+		escapedURL, _ := url.QueryUnescape(newURL)        // Unescape the URL to handle special characters like %2
+		fmt.Println(escapedURL)
 	}
 }
 
